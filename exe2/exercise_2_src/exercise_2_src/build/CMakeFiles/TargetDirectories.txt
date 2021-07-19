@@ -1,0 +1,3 @@
+/home/dylan/3D/3d-Scanning/exe2/exercise_2_src/exercise_2_src/build/CMakeFiles/rebuild_cache.dir
+/home/dylan/3D/3d-Scanning/exe2/exercise_2_src/exercise_2_src/build/CMakeFiles/exercise_02.dir
+/home/dylan/3D/3d-Scanning/exe2/exercise_2_src/exercise_2_src/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,192 @@
+[
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/rectify.dir/rectify.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/rectify.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/rectify.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/rectify.dir/helper.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/helper.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/helper.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/rectify.dir/Rectify_KITTI.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/Rectify_KITTI.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/Rectify_KITTI.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/simulation.dir/simulation.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/simulation.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/simulation.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/simulation.dir/orb.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/orb.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/orb.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/simulation.dir/undistort.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/undistort.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/undistort.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/simulation.dir/FindEssentialMatrix.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/FindEssentialMatrix.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/FindEssentialMatrix.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/simulation.dir/RecoverRT.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/RecoverRT.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/RecoverRT.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/simulation.dir/helper.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/helper.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/helper.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/kit.dir/kitti_kit.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/kitti_kit.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/kitti_kit.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/main.dir/main.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/main.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/main.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/main.dir/orb.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/orb.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/orb.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/main.dir/sift.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/sift.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/sift.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/main.dir/undistort.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/undistort.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/undistort.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/main.dir/FindEssentialMatrix.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/FindEssentialMatrix.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/FindEssentialMatrix.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/main.dir/RecoverRT.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/RecoverRT.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/RecoverRT.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/main.dir/helper.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/helper.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/helper.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/main.dir/Rectify_KITTI.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/Rectify_KITTI.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/Rectify_KITTI.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/matching.dir/matching.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/matching.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/matching.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/matching.dir/orb.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/orb.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/orb.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/matching.dir/undistort.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/undistort.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/undistort.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/matching.dir/FindEssentialMatrix.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/FindEssentialMatrix.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/FindEssentialMatrix.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/matching.dir/RecoverRT.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/RecoverRT.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/RecoverRT.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/matching.dir/helper.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/helper.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/helper.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/matching.dir/pointcloud.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/pointcloud.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/pointcloud.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/ba.dir/bundle_adjustment.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/bundle_adjustment.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/bundle_adjustment.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/ba.dir/undistort.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/undistort.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/undistort.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/ba.dir/FindEssentialMatrix.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/FindEssentialMatrix.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/FindEssentialMatrix.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/ba.dir/RecoverRT.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/RecoverRT.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/RecoverRT.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/ba.dir/helper.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/helper.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/helper.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/ba.dir/orb.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/orb.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/orb.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/ba.dir/sift.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/sift.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/sift.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/test_exp.dir/test.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/test.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/test.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/test_exp.dir/orb.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/orb.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/orb.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/test_exp.dir/undistort.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/undistort.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/undistort.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/test_exp.dir/FindEssentialMatrix.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/FindEssentialMatrix.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/FindEssentialMatrix.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/test_exp.dir/RecoverRT.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/RecoverRT.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/RecoverRT.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/final/reconstruction/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-7   -isystem /usr/include/opencv -I/home/dylan/3D/3d-Scanning/final/reconstruction -I/usr/include/eigen3 -I/usr/local/include/eigen3  -std=c++11 -O3 -O3 -DNDEBUG   -o CMakeFiles/test_exp.dir/helper.cpp.o -c /home/dylan/3D/3d-Scanning/final/reconstruction/helper.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/final/reconstruction/helper.cpp"
+}
+]

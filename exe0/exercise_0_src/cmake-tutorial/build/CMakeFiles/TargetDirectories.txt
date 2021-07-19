@@ -1,0 +1,4 @@
+/home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/build/CMakeFiles/rebuild_cache.dir
+/home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/build/CMakeFiles/lib.dir
+/home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/build/CMakeFiles/edit_cache.dir
+/home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/build/CMakeFiles/app.dir

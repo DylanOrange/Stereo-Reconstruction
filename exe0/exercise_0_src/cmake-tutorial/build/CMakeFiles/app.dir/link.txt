@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++-4.8  -O3 -DNDEBUG   CMakeFiles/app.dir/main.cpp.o  -o app liblib.a 

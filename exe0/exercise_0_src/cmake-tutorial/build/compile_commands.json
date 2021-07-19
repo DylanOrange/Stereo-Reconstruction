@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-4.8    -O3 -DNDEBUG   -std=gnu++1y -o CMakeFiles/lib.dir/lib/algo.cpp.o -c /home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/lib/algo.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/lib/algo.cpp"
+},
+{
+  "directory": "/home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-4.8   -I/home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/lib  -O3 -DNDEBUG   -std=gnu++1y -o CMakeFiles/app.dir/main.cpp.o -c /home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/main.cpp",
+  "file": "/home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/main.cpp"
+}
+]

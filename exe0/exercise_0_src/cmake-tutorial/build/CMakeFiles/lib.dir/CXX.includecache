@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/lib/algo.cpp
+algo.h
+/home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/lib/algo.h
+
+/home/dylan/3D/3d-Scanning/exe0/exercise_0_src/cmake-tutorial/lib/algo.h
+vector
+-
+algorithm
+-
+
