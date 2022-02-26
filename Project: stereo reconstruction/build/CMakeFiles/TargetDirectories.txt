@@ -1,9 +1,0 @@
-/home/dylan/3D/3d-Scanning/final/reconstruction/build/CMakeFiles/rebuild_cache.dir
-/home/dylan/3D/3d-Scanning/final/reconstruction/build/CMakeFiles/rectify.dir
-/home/dylan/3D/3d-Scanning/final/reconstruction/build/CMakeFiles/edit_cache.dir
-/home/dylan/3D/3d-Scanning/final/reconstruction/build/CMakeFiles/simulation.dir
-/home/dylan/3D/3d-Scanning/final/reconstruction/build/CMakeFiles/kit.dir
-/home/dylan/3D/3d-Scanning/final/reconstruction/build/CMakeFiles/main.dir
-/home/dylan/3D/3d-Scanning/final/reconstruction/build/CMakeFiles/matching.dir
-/home/dylan/3D/3d-Scanning/final/reconstruction/build/CMakeFiles/ba.dir
-/home/dylan/3D/3d-Scanning/final/reconstruction/build/CMakeFiles/test_exp.dir

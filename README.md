@@ -1,5 +1,5 @@
-# 3D-scanning-and-motion-capture
+# 3D Scanning and Motion Capture
 
 Exercises.
 
-Project: stereo reconstruction by Dekai Zhu, Qianyi Yang, Weihua Huang and Dongyue Lu.
+Project: stereo reconstruction by Dekai Zhu, Dongyue Lu, Qianyi Yang, Weihua Huang.

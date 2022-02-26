@@ -9,10 +9,10 @@ using namespace std;
 int Rectify_KITTI(Mat R23, Mat t23, Mat left_original, Mat right_original, Mat& rectified_left, Mat& rectified_right){
 
     struct Dataset dataset;
-    dataset.name = KITTI_TEST;  // 选择所需要的数据集
+    dataset.name = KITTI_TEST;
     dataset.rectified = 0;
     dataset.distort = 1;
-    dataset.given_points = 0; // 手动给点还是用特征点检测
+    dataset.given_points = 0;
 
     Mat left_rgb_camera_matrix, right_rgb_camera_matrix;
 

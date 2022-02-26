@@ -7,8 +7,8 @@ using namespace cv;
 using namespace std;
 
 int main(int argc, char*argv[]){
-    String left = "/home/dekai/3d_scanning/final/reconstruction/test_images/kitti_test_01/image_02/data/left_unrectified.png";
-    String right = "/home/dekai/3d_scanning/final/reconstruction/test_images/kitti_test_01/image_03/data/right_unrectified.png";
+    String left = "./test_images/kitti_test_01/image_02/data/left_unrectified.png";
+    String right = "./test_images/kitti_test_01/image_03/data/right_unrectified.png";
     Mat left_original = imread ( left, CV_LOAD_IMAGE_COLOR );
     Mat right_original = imread ( right, CV_LOAD_IMAGE_COLOR );
     Mat rectified_left, rectified_right;

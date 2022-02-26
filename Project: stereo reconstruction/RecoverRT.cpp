@@ -10,8 +10,6 @@ bool JudgeRT(struct transformation transformation, vector<Point2f> keypoints_lef
 struct transformation RecoverRT(Mat R1, Mat R2, Mat T, vector<Point2f> keypoints_left, vector<Point2f> keypoints_right, struct Dataset dataset){
     assert(keypoints_left.size() == keypoints_right.size());
 
-    
-
     // Mat T_ = T.resize(3);
     // T = T.t();
     if(DEBUG_PRINT){
@@ -61,7 +59,6 @@ bool JudgeRT(struct transformation transformation, vector<Point2f> keypoints_lef
     cv::Mat left_rgb_camera_matrix_inv = left_rgb_camera_matrix.inv();
     cv::Mat right_rgb_camera_matrix_inv = right_rgb_camera_matrix.inv();
 
-    // 构建M矩阵
     size_t num_points = keypoints_left.size();
     Mat M = Mat::zeros(cv::Size(num_points+1, 3*num_points), CV_64FC1);
     Mat _x1 = Mat::zeros(cv::Size(1,3), CV_64FC1);
@@ -120,7 +117,7 @@ bool JudgeRT(struct transformation transformation, vector<Point2f> keypoints_lef
         
     }
 
-    // 由 M^T * M 的特征值分解得到 M * lambda = 0 的解
+    // Use the smallest eigenvector of M^T * M to get the solution of M * lambda = 0
     Mat M_M = M.t() * M;
     Mat E, V;
     cv::eigen(M_M, E, V);
@@ -138,7 +135,6 @@ bool JudgeRT(struct transformation transformation, vector<Point2f> keypoints_lef
     double gamma = V.at<double>(num_points, num_points);  // scale factor
     // double gamma = (V.at<double>(num_points-2, num_points) + V.at<double>(num_points-1, num_points) + V.at<double>(num_points, num_points))/3;
 
-    // 根据符号来判断该R和T是否正确
     if(gamma < 0){
         gamma = -gamma;
         lambda = -lambda;
@@ -180,7 +176,6 @@ bool JudgeRT_2(struct transformation transformation, vector<Point2f> keypoints_l
     cv::Mat left_rgb_camera_matrix_inv = left_rgb_camera_matrix.inv();
     cv::Mat right_rgb_camera_matrix_inv = right_rgb_camera_matrix.inv();
 
-    // 构建M矩阵
     size_t num_points = keypoints_left.size();
     Mat M = Mat::zeros(cv::Size(num_points+1, 3*num_points), CV_64FC1);
     Mat _x1 = Mat::zeros(cv::Size(1,3), CV_64FC1);
@@ -239,7 +234,7 @@ bool JudgeRT_2(struct transformation transformation, vector<Point2f> keypoints_l
         
     }
 
-    // 由 M^T * M 的特征值分解得到 M * lambda = 0 的解
+    // Use the smallest eigenvector of M^T * M to get the solution of M * lambda = 0
     Mat M_M = M.t() * M;
     Mat E, V;
     cv::eigen(M_M, E, V);
@@ -257,7 +252,6 @@ bool JudgeRT_2(struct transformation transformation, vector<Point2f> keypoints_l
     double gamma = V.at<double>(num_points, num_points);  // scale factor
     // double gamma = (V.at<double>(num_points-2, num_points) + V.at<double>(num_points-1, num_points) + V.at<double>(num_points, num_points))/3;
 
-    // 根据符号来判断该R和T是否正确
     if(gamma < 0){
         gamma = -gamma;
         lambda = -lambda;

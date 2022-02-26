@@ -3,10 +3,9 @@
 using namespace std;
 using namespace cv;
 
-// 参考： http://ros-developer.com/2019/01/01/decomposing-projection-using-opencv-and-c/
-// 验证了rectify的相机参数
-
-// 这个程序主要用于得到rectified后的KITTI图像的相机内参, 由结果可以确信rectified后两个相机的orientation相同， translation为0.5327190420453419米，这个结果和论文中的标注接近
+// References: http://ros-developer.com/2019/01/01/decomposing-projection-using-opencv-and-c/
+// This script is just get the extrinsic after rectification, the result shows that after rectification, R23 = I, t is unchanged. 
+// norm(t) = baseline = 0.5327190420453419 meter
 
 int main(int argc, char*argv[]){
     Mat P_2 = (cv::Mat_<double>(3,4) << 7.215377e+02, 0.000000e+00, 6.095593e+02, 4.485728e+01,

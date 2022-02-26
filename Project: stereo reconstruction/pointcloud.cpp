@@ -22,7 +22,6 @@ bool WriteMesh(Vertex* vertices, unsigned int width, unsigned int height, const 
 {
 	// float edgeThreshold = 0.01f; // 1cm
 	float edgeThreshold = 0.10f; // 10 cm
-	// float edgeThreshold = 10.0f; // 目前这里相当于取消了限制
 
 	// TODO: Get number of vertices
 	unsigned int nVertices = width * height;
@@ -94,7 +93,6 @@ bool WriteMesh(Vertex* vertices, unsigned int width, unsigned int height, const 
 				<< int((vertices+idx)->color[1]) <<" "\
 				<< int((vertices+idx)->color[2]) << " "\
 				<< int((vertices+idx)->color[3]) <<std::endl;	
-				// Note: vertices+idx)->color[*]是unsigned char格式，直接输出的结果是根据ASCII表映射后的结果，会导致乱码
 	}
 
 	// TODO: save valid faces
@@ -107,19 +105,7 @@ bool WriteMesh(Vertex* vertices, unsigned int width, unsigned int height, const 
 	return true;
 }
 
-// 目前仅仅支持kitti test
 void PointCloudGenerate(cv::Mat depth_map, cv::Mat rgb_map, struct Dataset dataset, int file_order = 0){
-    // // 由像素坐标恢复到深度为1的坐标
-    // vector<Point3f> points_3d;
-    // for(int h = 0; h < depth.rows; h++){
-    //     for(int w = 0; w <depth.cols; w++){
-    //         pcl::PointXYZRGB point;
-    //     }
-    // }
-
-    // 恢复到相机坐标
-
-    // 生成点云
 
     if(dataset.name!=KITTI_TEST){
         cout<<"dataset error from pointcloud.cpp!"<<endl;
@@ -140,17 +126,14 @@ void PointCloudGenerate(cv::Mat depth_map, cv::Mat rgb_map, struct Dataset datas
             // float depth = *(depthMap + idx);
             float depth = (float)(depth_map.at<short>(h,w)); 
             depth = depth;
-            if(depth != MINF && depth != 0 && depth < 5000){ // 将点云的深度限制在30米范围内，大于这个范围是噪点
-                // 获得该点在相机坐标系下的齐次坐标
+            if(depth != MINF && depth != 0 && depth < 5000){ // range filter: (0, 50 meters)
                 float X_c = (float(w)-cX) * depth / fX;
                 float Y_c = (float(h)-cY) * depth / fY;
                 Vector4f P_c = Vector4f(X_c, Y_c, depth, 1);
 
-                // 获得该点在世界坐标系下的齐次坐标并赋值
                 vertices[idx].position = P_c;
 
-                // 赋值颜色信息
-                // opencv 中的顺序为bgr
+                // opencv: bgr
                 unsigned char R = rgb_map.at<Vec3b>(h,w)[2];
                 unsigned char G = rgb_map.at<Vec3b>(h,w)[1];
                 unsigned char B = rgb_map.at<Vec3b>(h,w)[0];
@@ -164,7 +147,7 @@ void PointCloudGenerate(cv::Mat depth_map, cv::Mat rgb_map, struct Dataset datas
         }
     }
 
-    // 写入到文件中
+    // write to the off file
     std::stringstream ss;
     ss << "kitti_test_" << file_order <<".off";
     WriteMesh(vertices, width, height, ss.str());

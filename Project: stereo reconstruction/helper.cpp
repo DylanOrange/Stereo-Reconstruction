@@ -41,18 +41,18 @@ String GetDirPath(struct Dataset dataset){
     String dir_path;
     if(dataset.name == KITTI_2011_09_26_drive_0048){
         if(dataset.rectified == 1){
-            dir_path = "/home/dekai/datasets/2011_09_26_drive_0048/2011_09_26_drive_0048_sync/2011_09_26/2011_09_26_drive_0048_sync";
+            dir_path = "../datasets/2011_09_26_drive_0048/2011_09_26_drive_0048_sync/2011_09_26/2011_09_26_drive_0048_sync";
         }
         else{
-            dir_path = "/home/dekai/datasets/2011_09_26_drive_0048/2011_09_26_drive_0048_extract/2011_09_26/2011_09_26_drive_0048_extract";
+            dir_path = "../datasets/2011_09_26_drive_0048/2011_09_26_drive_0048_extract/2011_09_26/2011_09_26_drive_0048_extract";
         }
     }
     else if(dataset.name == KITTI_2011_09_26_drive_0113){
         if(dataset.rectified == 1){
-            dir_path = "/home/dekai/datasets/2011_09_26_drive_0113/2011_09_26_drive_0113_sync/2011_09_26/2011_09_26_drive_0113_sync";
+            dir_path = "../datasets/2011_09_26_drive_0113/2011_09_26_drive_0113_sync/2011_09_26/2011_09_26_drive_0113_sync";
         }
         else{
-            dir_path = "/home/dekai/datasets/2011_09_26_drive_0113/2011_09_26_drive_0113_extract/2011_09_26/2011_09_26_drive_0113_extract";
+            dir_path = "../datasets/2011_09_26_drive_0113/2011_09_26_drive_0113_extract/2011_09_26/2011_09_26_drive_0113_extract";
         }
     }
     else if(dataset.name == KITTI_TEST){
@@ -86,7 +86,7 @@ String GetDirPath(struct Dataset dataset){
     return dir_path;
 }
 
-// 手动给定特征点坐标
+// Directly give the match points, this is just for debugging
 void GetPoints(vector<cv::Point2f>& keypoints_left, vector<cv::Point2f>& keypoints_right, struct Dataset dataset){
     float x1[12], y1[12], x2[12], y2[12];
     if(dataset.name == MATLAB_TEST){
@@ -140,17 +140,9 @@ void GetPoints(vector<cv::Point2f>& keypoints_left, vector<cv::Point2f>& keypoin
     }
 }
 
-void tmp(){
-    Mat x1 = Mat::ones(cv::Size(3,1), CV_64FC1);
-    Mat x2_hat = Mat::ones(cv::Size(3,3), CV_64FC1);
-    Mat tmp = x1 * x2_hat;
-    cout<<"tmp: "<<tmp<<endl;
-}
-
-// 从dirpath目录下分别读取左右图像的路径，并存入left_image_paths和right_image_paths中
+// get the path of left and right images under dirpath, and store them in left_image_paths and right_image_paths
 void getFilesList(String dirpath, vector<String> &left_image_paths, vector<String> &right_image_paths){
-    // String left_dir = dirpath + "/image_02";
-    // String right_dir = dirpath + "/image_03";
+
     struct dirent * entry;
     DIR *left_dir = opendir((dirpath + "/image_02/data/").c_str());
     DIR *right_dir = opendir((dirpath + "/image_03/data/").c_str());

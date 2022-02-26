@@ -26,54 +26,47 @@ enum stereo_matching{SEMI_GLOBAL_MATCHING, BLOCK_MATCHING};
 struct Dataset{
     int name;
     bool rectified; 
-    bool distort; // 是否畸变
-    bool given_points; // 是否手动给特征点
+    bool distort;
+    bool given_points; // directly give the match points, or detect them with keypoint detector? The former method is just for debugging
     float baseline;
     float focal_length;
 };
 
-/**
- * 使用ORB进行特征点检测
- * @param img_1 左图
- * @param img_2 右图
- * @param keypoints_left 左特征点
- * @param num_keypoints 选择特征点的数量（最相似的num_keypoints个）
- */
+// ORB detector
 int OrbDetector (Mat img_1, Mat img_2, 
                  vector<Point2f>& keypoints_left, vector<Point2f>& keypoints_right,
                  size_t num_keypoints);
 
-
+// SIFT detector
 int SiftDetector (Mat img_1, Mat img_2, 
                  vector<Point2f>& keypoints_left, vector<Point2f>& keypoints_right, 
                  size_t num_keypoints);
 
-/**
- * 对图像进行去畸变
- */
+// undistortion
 void Undistort(Mat distorted_left_image, Mat distorted_right_image, 
                Mat& undistorted_left_image,  Mat& undistorted_right_image);
 
-// 由基础矩阵计算本质矩阵， E = K2^T * F * K1
+// Compute the essential matrix: E = K2^T * F * K1
 Mat FindEssentialMatrix(Mat fundamental_mat, struct Dataset dataset);
 
-// 从R和t的4种可能组合中获取正确的解(根据CV2的slide 6中的方法)
+// Choose the correct R and T from four possible solutions
 struct transformation RecoverRT(Mat R1, Mat R2, Mat T, vector<Point2f> keypoints_left, vector<Point2f> keypoints_right, struct Dataset dataset);
 struct transformation RecoverRT_2(Mat R1, Mat R2, Mat T, vector<Point2f> keypoints_left, vector<Point2f> keypoints_right, struct Dataset dataset, Mat& lambda);
 
-// 获取相机内参
+// Get the instrinsic
 void GetIntrinsics(struct Dataset dataset, cv::Mat& left_rgb_camera_matrix, cv::Mat& right_rgb_camera_matrix);
 
-// 获取数据集的路径
+// Get the dir path of the dataset
 String GetDirPath(struct Dataset dataset);
 
-// 手动输入特征点坐标
+// Directly give the match points (this is just for debugging)
 void GetPoints(vector<cv::Point2f>& keypoints_left, vector<cv::Point2f>& keypoints_right, struct Dataset dataset);
 
-// 获取数据集中图片的完整路径
+// Get the full path of left and right images
 void getFilesList(String dirpath, vector<String> &left_image_paths, vector<String> &right_image_paths);
 
-
+// Generate pointcloud
 void PointCloudGenerate(cv::Mat depth_map, cv::Mat rgb_map, struct Dataset dataset, int file_order);
 
+// rectify the images
 int Rectify_KITTI(Mat R23, Mat t23, Mat left_original, Mat right_original, Mat& rectified_left, Mat& rectified_right);

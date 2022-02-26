@@ -40,7 +40,7 @@ set(HEADERS
 )
 
 set(SOURCES
-    main.cpp
+    matching_sparse.cpp
     orb.cpp
     sift.cpp
     undistort.cpp
@@ -55,7 +55,7 @@ set(KIT
 )
 
 set(MATCHING
-    matching.cpp
+    matching_dense.cpp
     orb.cpp
     undistort.cpp
     FindEssentialMatrix.cpp
@@ -99,14 +99,14 @@ set(RECTIFY
 )
 
 
-add_executable( main ${HEADERS} ${SOURCES}  )
-target_link_libraries( main ${OpenCV_LIBS} )
+add_executable( matching_sparse ${HEADERS} ${SOURCES}  )
+target_link_libraries( matching_sparse ${OpenCV_LIBS} )
 
 add_executable( kit ${HEADERS} ${KIT}  )
 target_link_libraries( kit ${OpenCV_LIBS} )
 
-add_executable( matching ${HEADERS} ${MATCHING}  )
-target_link_libraries( matching ${OpenCV_LIBS} )
+add_executable( matching_dense ${HEADERS} ${MATCHING}  )
+target_link_libraries( matching_dense ${OpenCV_LIBS} )
 
 add_executable(ba ${HEADERS} ${BA})
 target_link_libraries(ba ${G2O_LIBS}  ${OpenCV_LIBS})

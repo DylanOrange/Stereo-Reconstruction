@@ -8,8 +8,6 @@ using namespace std;
 void Undistort(Mat distorted_left_image, Mat distorted_right_image, 
                Mat& undistorted_left_image,  Mat& undistorted_right_image){
                    
-    // 手动设置cameraMatrix， distCoeffs
-    // 看看newCameraMatrix有没有发生变化？
 
     //KITTI Parameters
     // K_02

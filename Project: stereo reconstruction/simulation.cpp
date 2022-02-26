@@ -18,7 +18,6 @@ cv::Mat left_rgb_camera_matrix_inv = left_rgb_camera_matrix.inv();
 
 int main(int argc, char*argv[]){
 
-    // 生成图像中的仿真点， 共40个 [u, v, lambda] 1392 x 512
     // [100-1200, 50-450, 1-40]
     float LO_U, HI_U, LO_V, HI_V, LO_Z, HI_Z;
     LO_U = 100.0;
@@ -80,11 +79,11 @@ int main(int argc, char*argv[]){
     }
 
     struct Dataset dataset;
-    // dataset.name = KITTI_TEST;  // 选择所需要的数据集
+    // dataset.name = KITTI_TEST; 
     dataset.name = KITTI_TEST;
     dataset.rectified = 1;
     dataset.distort = 0;
-    dataset.given_points = 1; // 手动给点还是用特征点检测
+    dataset.given_points = 1; 
 
 
     Mat fundamental_mat = findFundamentalMat(keypoints_left, keypoints_right,  cv::FM_8POINT);
@@ -92,11 +91,9 @@ int main(int argc, char*argv[]){
     Mat essential_mat = FindEssentialMatrix(fundamental_mat, dataset);
     // cout<<"essential_mat: "<<essential_mat<<endl;
 
-    // 由本质矩阵恢复出R和T, 注意这里的T仅表示方向，因为其L2-norm固定为1
     Mat R1, R2, T;
     decomposeEssentialMat(essential_mat, R1, R2, T);
 
-    // 选择正确的R和T
     struct transformation transformation = RecoverRT(R1, R2, T, keypoints_left, keypoints_right, dataset);
     if(DEBUG_PRINT){
         cout<<"R and t from eight-point method:"<<endl;
@@ -105,8 +102,5 @@ int main(int argc, char*argv[]){
     }
 
 
-    // 这些点投影到第二张图像上
-
-    // 判断投影的点是否出现出款现象， 如果是，则删除
     return 0; 
 }

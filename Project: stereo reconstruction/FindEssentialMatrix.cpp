@@ -5,7 +5,7 @@ using namespace std;
 using namespace cv;
 
 
-// 由基础矩阵计算本质矩阵， E = K2^T * F * K1
+// Compute essential matrix from fundamental matrix， E = K2^T * F * K1
 Mat FindEssentialMatrix(Mat fundamental_mat, struct Dataset dataset){
     if(DEBUG_PRINT){
         cout<<"fundamental_mat.size(): "<<fundamental_mat.size()<<endl;

@@ -16,8 +16,8 @@ void ReadTransformRecord(string filename, vector<Mat>& Rotations, vector<Mat>& t
     double _R[9];
     double _t[3];
 
-	while (getline(in, line)){//将in文件中的每一行字符读入到string line中
-		stringstream ss(line);//使用string初始化stringstream
+	while (getline(in, line)){
+		stringstream ss(line);
         Mat R = Mat::zeros(cv::Size(3,3), CV_64FC1);
         Mat t = Mat::zeros(cv::Size(1,3), CV_64FC1);
         double x;
@@ -40,7 +40,7 @@ void ReadTransformRecord(string filename, vector<Mat>& Rotations, vector<Mat>& t
 
 int main(int argc, char*argv[]){
 
-    string filename = "/home/dekai/3d_scanning/final/reconstruction/build/rt_sift_40.txt";
+    string filename = "../build/rt_sift_40.txt";
     vector<Mat> Rotations;
     vector<Mat> translations;
     ReadTransformRecord(filename, Rotations, translations);
